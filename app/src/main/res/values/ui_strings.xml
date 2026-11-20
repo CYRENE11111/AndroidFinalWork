@@ -1,0 +1,27 @@
+<resources>
+    <!-- 底部导航 -->
+    <string name="nav_home">首页</string>
+    <string name="nav_history">历史</string>
+    <string name="nav_settings">设置</string>
+
+    <!-- 播放页 -->
+    <string name="player_back">返回</string>
+    <string name="player_play">播放</string>
+    <string name="player_pause">暂停</string>
+    <string name="player_play_pause">播放/暂停</string>
+    <string name="player_next">下一首</string>
+    <string name="player_prev">上一首</string>
+    <string name="player_more">更多</string>
+    <string name="player_lock">锁定</string>
+    <string name="player_fullscreen">全屏</string>
+    <string name="player_speed">倍速</string>
+    <string name="player_subtitle">字幕</string>
+    <string name="player_timer">定时关闭</string>
+    <string name="player_pip">画中画</string>
+    <string name="player_floating">悬浮窗</string>
+
+    <!-- 列表 / 历史 -->
+    <string name="home_empty">还没有视频，下拉刷新试试</string>
+    <string name="history_empty">暂无观看历史</string>
+    <string name="playlist_empty">播放列表是空的</string>
+</resources>

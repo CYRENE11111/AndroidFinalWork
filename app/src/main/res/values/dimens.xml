@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_s">8dp</dimen>
+    <dimen name="space_m">16dp</dimen>
+    <dimen name="space_l">24dp</dimen>
+
+    <dimen name="text_title">16sp</dimen>
+    <dimen name="text_sub">13sp</dimen>
+
+    <dimen name="video_cover_width">56dp</dimen>
+    <dimen name="video_cover_height">96dp</dimen>
+</resources>

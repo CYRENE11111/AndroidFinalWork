@@ -1,0 +1,4 @@
+<resources>
+    <string name="data_scan_failed">扫描失败，请检查权限</string>
+    <string name="data_empty">没有扫描到视频</string>
+</resources>

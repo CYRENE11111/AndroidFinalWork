@@ -1,0 +1,4 @@
+<resources>
+    <string name="playback_notification_channel">播放控制</string>
+    <string name="playback_notification_title">正在播放</string>
+</resources>

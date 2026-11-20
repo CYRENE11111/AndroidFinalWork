@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 基础主题（DayNight，夜间由 values-night 覆盖） -->
+    <style name="Base.Theme.VPlayer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/accent</item>
+    </style>
+
+    <style name="Theme.VPlayer" parent="Base.Theme.VPlayer" />
+
+    <!-- 播放页：纯黑背景 -->
+    <style name="Theme.VPlayer.Player" parent="Theme.VPlayer">
+        <item name="android:windowBackground">@color/player_bg</item>
+    </style>
+</resources>
