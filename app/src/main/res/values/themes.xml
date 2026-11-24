@@ -3,12 +3,6 @@
     <style name="Base.Theme.VPlayer" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorSecondary">@color/accent</item>
-        <item name="android:windowBackground">@color/screen_bg</item>
-
-        <!-- 全局圆角：小(按钮/输入)、中(卡片/对话框)、大(底部弹层) -->
-        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.VPlayer.Small</item>
-        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.VPlayer.Medium</item>
-        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.VPlayer.Large</item>
     </style>
 
     <style name="Theme.VPlayer" parent="Base.Theme.VPlayer" />
@@ -16,20 +10,5 @@
     <!-- 播放页：纯黑背景 -->
     <style name="Theme.VPlayer.Player" parent="Theme.VPlayer">
         <item name="android:windowBackground">@color/player_bg</item>
-    </style>
-
-    <style name="ShapeAppearance.VPlayer.Small" parent="ShapeAppearance.Material3.SmallComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">10dp</item>
-    </style>
-
-    <style name="ShapeAppearance.VPlayer.Medium" parent="ShapeAppearance.Material3.MediumComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">18dp</item>
-    </style>
-
-    <style name="ShapeAppearance.VPlayer.Large" parent="ShapeAppearance.Material3.LargeComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">26dp</item>
     </style>
 </resources>

@@ -11,9 +11,4 @@
     <color name="control_bg">#99000000</color>
     <color name="text_primary">#FF212121</color>
     <color name="text_secondary">#FF757575</color>
-
-    <!-- 界面底色 / 卡片 / 底栏（夜间由 values-night 覆盖） -->
-    <color name="screen_bg">#FFF6F6FA</color>
-    <color name="card_bg">#FFFFFFFF</color>
-    <color name="nav_bg">#FFFFFFFF</color>
 </resources>

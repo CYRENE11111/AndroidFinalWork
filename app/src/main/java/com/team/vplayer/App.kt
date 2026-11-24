@@ -1,26 +1,15 @@
 package com.team.vplayer
 
 import android.app.Application
-import androidx.appcompat.app.AppCompatDelegate
-import coil.Coil
-import com.team.vplayer.common.ImageLoaderFactory
-import com.team.vplayer.data.DataManager
-import com.team.vplayer.data.prefs.Prefs
 
 /**
  * 应用入口。
- * - 初始化数据层（成员 B）
- * - 设置 Coil 图片加载器（支持视频帧缩略图）
- * - 应用夜间模式偏好
+ *
+ * TODO(成员B 第1次)：初始化 VideoRepository 并注册到 ServiceLocator。
+ * TODO(成员A 第1次)：按需初始化 Coil / 夜间模式等全局配置。
  */
 class App : Application() {
     override fun onCreate() {
         super.onCreate()
-        DataManager.init(this)
-        Coil.setImageLoader(ImageLoaderFactory.create(this))
-        val dark = Prefs(this).darkMode
-        AppCompatDelegate.setDefaultNightMode(
-            if (dark) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO,
-        )
     }
 }
