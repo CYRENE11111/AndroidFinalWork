@@ -12,16 +12,58 @@
     <string name="player_next">下一首</string>
     <string name="player_prev">上一首</string>
     <string name="player_more">更多</string>
-    <string name="player_lock">锁定</string>
-    <string name="player_fullscreen">全屏</string>
     <string name="player_speed">倍速</string>
-    <string name="player_subtitle">字幕</string>
     <string name="player_timer">定时关闭</string>
     <string name="player_pip">画中画</string>
     <string name="player_floating">悬浮窗</string>
+    <string name="player_lock">锁定</string>
+    <string name="player_unlock">解锁</string>
+    <string name="player_landscape">横屏</string>
+
+    <!-- 定时关闭 -->
+    <string name="sleep_timer_option">%1$d 分钟后关闭</string>
+    <string name="sleep_timer_custom">自定义…</string>
+    <string name="sleep_timer_custom_title">自定义定时</string>
+    <string name="sleep_timer_custom_hint">分钟数（1–480）</string>
+    <string name="sleep_timer_off">关闭定时</string>
+    <string name="sleep_timer_none">未设置定时</string>
+    <string name="sleep_timer_remaining">剩余 %1$s</string>
+    <string name="sleep_timer_set">已设置定时：%1$d 分钟后关闭</string>
+    <string name="sleep_timer_cancelled">已取消定时</string>
+    <string name="sleep_timer_invalid">请输入 1–480 之间的分钟数</string>
 
     <!-- 列表 / 历史 -->
     <string name="home_empty">还没有视频，下拉刷新试试</string>
     <string name="history_empty">暂无观看历史</string>
     <string name="playlist_empty">播放列表是空的</string>
+    <string name="search_hint">搜索视频</string>
+    <string name="sort">排序</string>
+    <string name="clear_history">清空历史</string>
+    <string name="clear_history_confirm">确定要清空全部历史记录吗？</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_sort">排序</string>
+    <string name="action_columns">切换单列/双列</string>
+
+    <!-- 排序方式 -->
+    <string name="sort_name">按名称</string>
+    <string name="sort_duration">按时长</string>
+    <string name="sort_size">按大小</string>
+    <string name="sort_time">按时间</string>
+
+    <!-- 历史编辑模式 -->
+    <string name="select_all">全选</string>
+    <string name="delete_selected">删除</string>
+    <string name="done">完成</string>
+    <string name="selected_count">已选 %1$d 项</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_dark">夜间模式</string>
+    <string name="settings_auto_next">自动连播</string>
+    <string name="settings_subtitle">显示字幕</string>
+    <string name="settings_overlay">悬浮窗权限（显示在其他应用上方）</string>
+    <string name="settings_clear_cache">清除缓存</string>
+    <string name="settings_about">VPlayer · 本地视频播放器</string>
 </resources>
