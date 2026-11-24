@@ -7,8 +7,9 @@ import kotlinx.coroutines.flow.StateFlow
 /**
  * 播放控制统一入口。**由成员 C 拥有**，成员 A 只调用，不要改本文件。
  *
- * 生命周期约定：A 的播放页 onDestroy 只解绑（playerView.player = null），
- * **不调 release()**；播放器由 PlaybackService 持有，release 由 Service 销毁时调用。
+ * 生命周期约定：A 的播放页 onDestroy 只解绑（playerView.player = null）；
+ * 用户主动退出（isFinishing）时调用 release() 停止播放，
+ * 否则播放器由 PlaybackService 持有，release 由 Service 销毁时调用。
  */
 interface PlaybackController {
 
@@ -23,8 +24,7 @@ interface PlaybackController {
     fun next()
     fun previous()
     fun setSpeed(speed: Float)
-    fun setRepeatMode(mode: RepeatMode)
-    fun selectSubtitleTrack(index: Int)
+    fun setSubtitlesEnabled(enabled: Boolean)
 
     /** 由 PlaybackService 销毁时调用，不要由界面调用。 */
     fun release()

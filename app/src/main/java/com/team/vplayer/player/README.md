@@ -11,14 +11,16 @@
 |---|---|
 | `player/core/PlaybackController` | 播放控制接口（A 调用） |
 | `player/core/PlayerManager` | 单例实现，暴露 `StateFlow<PlaybackState>` |
-| `player/core/PlaybackState` | 状态快照 / `RepeatMode` |
+| `player/core/PlaybackState` | 播放状态快照 |
+| `player/core/SleepTimer` | 定时关闭 |
 | `player/service/PlaybackService` | 后台服务（MediaSessionService） |
-| `player/subtitle/SubtitleManager` | 字幕管理 |
-| `player/pip/PipManager` | 画中画 / 悬浮窗 |
+| `player/subtitle/SubtitleManager` | 字幕扫描与加载 |
+| `player/pip/PipManager` | 画中画入口 |
+| `player/pip/FloatingWindow` | 悬浮窗 |
 
 ## 用法
 - A 通过 `ServiceLocator.playback` 拿到 `PlayerManager`。
-- `release()` 由 `PlaybackService` 销毁时调用，界面不要调。
+- `release()` 由 `PlaybackService` 销毁时调用；用户退出播放页（`isFinishing`）时界面也会调用它停止播放。
 
 ## 工作记录
 > 每次工作结束追加一条，随代码一起提交（老师要看的 README）。
