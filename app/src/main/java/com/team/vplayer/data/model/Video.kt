@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 /**
  * 一个本地视频文件。由成员 B 扫描 MediaStore 后填充。
- * 实现类可被成员 A / C 直接读取（只读，不要修改本文件）。
+ * 成员 A / C 可直接读取（只读，不要修改本文件）。
  */
 @Entity(tableName = "videos")
 data class Video(
